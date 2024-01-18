@@ -22,7 +22,7 @@ function shutdownComputer() {
 }
 shutdownComputer();
 });
-app.get('/', (req, res) => {
+app.get('/hello2', (req, res) => {
   res.send('Hello, World!'); // Sends 'Hello, World!' as the response
 });
 

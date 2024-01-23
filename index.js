@@ -104,6 +104,12 @@ app.post('/upload', async (req, res) => {
   }
 });
 
+app.get('/', (req, res) => {
+    return res.status(200).json({
+        message: 'Hello World'
+    });
+});
+
 app.listen(port, () => {
   console.log(`Server is running at http://localhost:${port}`);
 });
